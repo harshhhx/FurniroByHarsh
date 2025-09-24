@@ -8,10 +8,13 @@ const Banner = () => {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 -z-[5] bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
       {/* Content Box */}
-      <div className="absolute bottom-8 left-1/2 w-[90%] max-w-lg -translate-x-1/2 rounded-md bg-secondary/90 px-6 py-10 text-center sm:px-8 md:left-auto md:right-12 md:translate-x-0 md:text-left lg:bottom-[100px] lg:h-[440px] lg:w-[640px] lg:px-[40px]">
-        <div className="space-y-4 lg:space-y-6">
-          <h3 className="font-poppins text-sm font-semibold sm:text-base">
+      <div className="absolute bottom-6 left-1/2 w-[90%] max-w-lg -translate-x-1/2 rounded-md bg-secondary/90 px-5 py-8 text-center shadow-lg sm:px-8 md:left-auto md:right-12 md:translate-x-0 md:text-left lg:bottom-[100px] lg:h-[440px] lg:w-[640px] lg:px-[40px]">
+        <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+          <h3 className="font-poppins text-sm font-semibold text-gray-800 sm:text-base">
             New Arrival
           </h3>
           <h1 className="font-poppins text-primary text-2xl font-bold leading-snug sm:text-3xl md:text-4xl lg:text-[52px] lg:leading-tight">
@@ -24,8 +27,8 @@ const Banner = () => {
         </div>
 
         {/* Button */}
-        <button className="mt-6 h-[56px] w-[180px] rounded-md bg-primary font-poppins text-sm font-bold capitalize text-white transition-colors duration-300 hover:bg-btnHover sm:h-[64px] sm:w-[200px] sm:text-base lg:mt-10 lg:h-[72px] lg:w-[222px]">
-          buy now
+        <button className="mt-5 h-[52px] w-[160px] rounded-md bg-primary font-poppins text-sm font-bold capitalize text-white shadow-md transition-colors duration-300 hover:bg-btnHover sm:mt-6 sm:h-[60px] sm:w-[190px] sm:text-base lg:mt-10 lg:h-[72px] lg:w-[222px]">
+          Buy Now
         </button>
       </div>
     </section>
